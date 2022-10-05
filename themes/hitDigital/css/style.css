@@ -1,0 +1,202 @@
+/* # autor Dimas Campos>
+ copyright hit 2022.*/
+
+
+a:hover {
+  color: #fff !important;
+}
+
+body {
+  background: #2d2d2d !important;
+}
+
+/*BACKGROUND HEAD E FOOTER*/
+.cl-1 {
+  background: rgb(35, 35, 35);
+}
+
+/* MAIN */
+.main-content {
+  overflow: hidden;
+  max-width: 780px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.main-content[data-content="intro"] section#intro {
+  display: block;
+  animation: zoomOut 0.5s forwards;
+}
+
+.main-content[data-content="contato"] section#contato {
+  display: block;
+  animation: zoomOut 0.5s forwards;
+}
+
+section#intro {
+  display: none;
+}
+
+section#contato {
+  display: none;
+}
+
+/*PUBLICAÇÃO*/
+
+.container-form,
+.container-publicacao {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #ea916b;
+  padding: 40px;
+  color: #fff;
+  font-weight: 100;
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 16%);
+  border-radius: 10px;
+}
+
+.container-form p,
+.container-publicacao p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.menu-container {
+  margin: 40px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-publicacao {
+  background: #ea916b;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.menu-publicacao.active {
+  color: #1d1d1d;
+}
+
+.menu-publicacao:hover {
+  color: #1d1d1d;
+  transition: 1s all;
+}
+
+.title h3,
+.title {
+  text-align: center;
+  margin: 20px;
+  color: #fff;
+  font-weight: 200;
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  width: 90px;
+  height: 2px;
+  display: block;
+  background: #707070;
+  margin: 0 auto;
+  z-index: -1;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title::after {
+  content: "";
+  width: 20px;
+  height: 5px;
+  display: block;
+  background: #ea916b;
+  margin: 0 auto;
+}
+
+/*FORMULÁRIO*/
+.forms {
+  display: flex;
+}
+
+.forms-input {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 46px;
+}
+
+.forms-input:first-child {
+  margin-right: 18px;
+}
+
+.forms-input input {
+  height: 46px;
+  border-radius: 5px;
+}
+
+.form-control {
+  height: 200px;
+  background: #ffffff;
+  border-radius: 5px;
+  resize: none;
+}
+
+.btn {
+  background: #373735 !important;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  margin: 0 auto !important;
+  display: block !important;
+  margin-top: 20px !important;
+  color: #fff !important;
+  width: 160px;
+  height: 40px;
+}
+
+/* Alteração bootstrap  */
+.row {
+  --mdb-gutter-x: 0rem !important;
+}
+
+.topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #ea916b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0rem 0.5rem 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  cursor: pointer;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1, 0);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

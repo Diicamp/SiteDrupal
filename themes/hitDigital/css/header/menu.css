@@ -1,0 +1,72 @@
+/* # autor Dimas Campos>
+ copyright hit 2022.*/
+
+/*CONTAINER GERAL*/
+.container-header {
+  width: 80% !important;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*MENU*/
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 40px;
+  margin-bottom: 0;
+}
+
+.header-menu a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 16px 0px;
+  position: relative;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 4px;
+  position: absolute;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
+}
+
+/*LOGOS*/
+.logo-principal img {
+  width: 170px;
+  padding: 10px 0;
+}
+
+/*RESPONSOVIDADE*/
+@media (max-width: 1160px) {
+  .logo-principal img {
+    height: 65px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-header {
+    padding: 60px;
+  }
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+}

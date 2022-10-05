@@ -1,0 +1,22 @@
+# app.info.yml
+# author 
+# version 1.0
+# copyright hit 2022.
+
+name: Hit Drupal
+description: Tema para o site Hit Digital
+type: theme
+version: 1.0.0
+project: 'Hit Digital'
+core_version_requirement: ^8 || ^9
+base theme: classy
+libraries:
+  - app/hitDigital-css
+  - app/hitDigital-js
+
+regions:
+  menuTopo: 'Menu Topo'
+  menuMain: 'Principal'
+  content: 'conteudo'
+  publicacoes: 'Publicacoes'
+

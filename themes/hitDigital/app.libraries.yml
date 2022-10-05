@@ -1,0 +1,22 @@
+# author Dimas Campos
+# version 1.0
+# copyright hit-digital 2022.
+
+hitDigital-css:
+  version: 1.0
+  css:
+    theme:
+      # CCSS HEADER
+      css/header/menu.css: {}
+      # CSS GERAL
+      css/style.css: {}
+
+hitDigital-js:
+  version: 1.0
+  js:
+    # JS GERAL 
+    js/app.js: {}
+
+   
+    
+   
